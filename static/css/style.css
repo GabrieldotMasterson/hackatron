@@ -13,3 +13,9 @@ body {
     height: auto;
 }
 
+section .hero{
+  height: 30vh;
+  background-image: url(assets/images/HERO.jfif); 
+  background-repeat: no-repeat;
+}
+

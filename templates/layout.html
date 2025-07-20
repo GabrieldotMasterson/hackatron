@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css\style.css">
     <link rel="shortcut icon" href="assets\images\logo.jfif" type="image/x-icon">
-    <title>Conecta.Elas</title>
+    <title>{% block title %} Conecta.Elas {% endblock %}</title>
 
 </head>
 <body>
@@ -16,7 +16,7 @@
     <nav class="navbar">
 
         <div class="navbar-start">
-            <img class="navbar-logo" src="assets\images\logo.jfif" alt="logo">
+            <img class="navbar-logo" src="{{ url_for('static', filename='static/assets/imgs/logo.jfif') }}" alt="logo">
         </div>
 
         <div class="navbar-end">
@@ -25,11 +25,15 @@
         </div>
     </nav>
 
+    <main>
+    { % block content % }
+
+    { % endblock % }
+    </main>
     
-
-    
-
-
+    <footer class="footer has-center">
+        conecta.elas©2025
+    </footer>
     
 </body>
 </html>
