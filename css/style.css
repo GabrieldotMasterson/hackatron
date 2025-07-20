@@ -1,4 +1,15 @@
-body{
-    background-color: #9F6CAF;
+body {
+  background-color: #D9A3AC;
+  height: 100vh;
+}
+
+
+.navbar{
+    background-color: #ECECEC;
+}
+.navbar-logo{
+ 
+    width: 5vw;
+    height: auto;
 }
 
