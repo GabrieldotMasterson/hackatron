@@ -1,21 +1,66 @@
 body {
-  background-color: #D9A3AC;
   height: 100vh;
+  background-color: #C192D1;
 }
-
 
 .navbar{
     background-color: #ECECEC;
+    margin-bottom: 2rem;
 }
 .navbar-logo{
- 
     width: 5vw;
     height: auto;
 }
 
-section .hero{
+.hero{
   height: 30vh;
-  background-image: url(assets/images/HERO.jfif); 
-  background-repeat: no-repeat;
+
 }
 
+.form{
+  height: 100vh;
+}
+
+.footer{
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  display: flex; 
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.contato-box {
+  display: flex; 
+  flex-direction: column;
+  
+}
+
+.img {
+  
+  width: 20%;         
+  height: auto;       
+  display: block;     
+  margin: 0 2rem;  
+
+}
+
+.img-contato {
+   width: 20%;         
+  height: auto;       
+  display: block;     
+  margin: 0 2rem;  
+}
+
+.link-contato{
+  color: cadetblue;
+  text-decoration: underline;
+}

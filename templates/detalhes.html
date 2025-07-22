@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}Conecta.Elas{% endblock %}
+
+{% block content %}
+<div class="box">
+
+    <div>
+        <h1 class="tilte">{{ oportunidade.title }}</h1>
+        <p class="subtitle">{{ oportunidade.subtitle }}</p>
+    </div>
+
+    <div>
+        <img class="image is-128x128" src="{{ oportunidade.img }}" alt="">
+    </div>
+
+    <div>
+        <p>{{ oportunidade.detalhes }}</p>
+    </div>
+
+
+</div>
+
+{% endblock %}

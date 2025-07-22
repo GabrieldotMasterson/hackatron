@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}Conecta.Elas{% endblock %}
+
+{% block content %}
+
+<section class="section " >
+        <div class="box hero">
+            <h1 class="title">Construindo Esperança, Realizando Sonhos</h1>
+            <p class="text">Criando iniciativas que transformam comunidades e promovem igualdade para todos.</p>
+            <button class="button is-primary">EXPLORE O NOSSO MUSEU</button>
+        </div>
+</section>
+
+{% for oportunidade in oportunidades %}
+
+<a class="box card" href="{{ url_for('detalhes', id=oportunidade.id) }}">
+
+    
+    <img class="img" src="{{ oportunidade.img }}" alt="">
+    
+    <div>
+        <h1 class="tilte">{{ oportunidade.title }}</h1>
+        <p class="subtitle">{{ oportunidade.subtitle }}</p>
+    </div>
+     
+
+
+</a>
+
+{% endfor %}
+
+{% endblock %}

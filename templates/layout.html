@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="static\css\style.css">
     <link rel="shortcut icon" href="assets\images\logo.jfif" type="image/x-icon">
     <title>{% block title %} Conecta.Elas {% endblock %}</title>
 
@@ -15,20 +15,22 @@
 
     <nav class="navbar">
 
-        <div class="navbar-start">
-            <img class="navbar-logo" src="{{ url_for('static', filename='static/assets/imgs/logo.jfif') }}" alt="logo">
-        </div>
+        <a class="navbar-start" href="{{ url_for('index') }}">
+            <img class="navbar-logo" src="{{ url_for('static', filename='assets/images/logo.png') }}" alt="logo">
+        </a>
 
         <div class="navbar-end">
             <a class="navbar-item" href="">sobre nos</a>
-            <a class="navbar-item" href="">oportunidades</a>
+            <a class="navbar-item" href="">museu</a>
+            <a class="navbar-item" href="{{ url_for('get_contato') }}">contato</a>
+            <a class="navbar-item" href="{{ url_for('get_form') }}">adicionar nova oportunidade</a>
         </div>
     </nav>
 
     <main>
-    { % block content % }
+    {% block content %}
 
-    { % endblock % }
+    {% endblock %}
     </main>
     
     <footer class="footer has-center">
