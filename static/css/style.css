@@ -54,7 +54,8 @@ a {
 
 .mulher-img{
   height: 20rem;
-  width:auto;
+  width: 20rem;
+  object-fit: cover;
   margin-right: 2rem;
 }
 
@@ -123,3 +124,57 @@ a {
   z-index: -1;
 
 }
+
+/* principal */
+
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;  
+}
+
+
+.conteudo {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  z-index: 1; 
+  color: white;  
+  text-align: center;
+ 
+}
+
+
+.conteudo p{
+   margin-bottom: 20px;
+
+}
+
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(3px);
+  
+}
+
+
+
+
+

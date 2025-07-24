@@ -7,6 +7,10 @@ with app.app_context():
     db.create_all()
 
 @app.get("/")
+def landingpage():
+    return render_template("hero.html")
+
+@app.get("/principal")
 def index():
     valores_oportunidades = oportunidades_db.query.all()
     return render_template("index.html", oportunidades=valores_oportunidades)
