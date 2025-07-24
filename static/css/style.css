@@ -1,5 +1,4 @@
 body {
-  height: 100vh;
   background-color: #C192D1;
 }
 
@@ -10,6 +9,7 @@ body {
 .navbar-logo{
     width: 5vw;
     height: auto;
+    margin-bottom: 0.5rem;
 }
 
 .hero{
@@ -38,10 +38,34 @@ a {
   background-color: #f9f9f9;
 }
 
+.img-oportunidade{
+  height: 20rem;
+  margin-right: 2rem;
+  object-fit: contain;
+  width: 20rem;
+}
+
+/* contato */
 .contato-box {
   display: flex; 
   flex-direction: column;
   
+}
+
+.mulher-img{
+  height: 20rem;
+  width:auto;
+  margin-right: 2rem;
+}
+
+.mulher-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.mulher-box{
+  display: flex;
+  flex-direction: column;
 }
 
 .img {
@@ -54,8 +78,10 @@ a {
 }
 
 .img-contato {
-   width: 20%;         
-  height: auto;       
+  width: 20%;         
+  height: 20rem;       
+  object-fit: cover;
+  border-radius: 20%;
   display: block;     
   margin: 0 2rem;  
 }
@@ -63,4 +89,37 @@ a {
 .link-contato{
   color: cadetblue;
   text-decoration: underline;
+}
+
+/* detalhes */
+.detalhes-box{
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+}
+
+.detalhes-img {
+  margin-right: 2rem;
+  height: 20rem;
+  width: auto;
+}
+
+.detalhes-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botao-detalhe{
+  margin-top: 2rem;
+}
+
+/* sobre */
+
+.hero-sobre{
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+
 }

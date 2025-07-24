@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}Conecta.Elas{% endblock %}
+
+{% block content %}
+
+
+<div class="section ">
+    {% for mulher in mulheres %}
+    <div class="box mulher-container ">
+        <img class="mulher-img" src="{{ mulher.img }}" alt="Imagem-da-mulher">
+        <div class="mulher-box">
+            <h2 class="title">{{ mulher.nome }}</h2>
+            
+            <p class="subtitle">{{ mulher.texto }}</p>
+            <p>data: {{ mulher.data }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+        
+{% endblock %}

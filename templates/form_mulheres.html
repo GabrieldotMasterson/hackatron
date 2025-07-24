@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block title %}Conecta.Elas{% endblock %}
+
+{% block content %}
+
+<section class="field ">
+    <form class="box form" action="{{ url_for('add_mulher') }}" method="POST">
+        <h1 class="title">Adicione uma nova mulher</h1>
+        <h1>OS ENVIOS ESTARÃO SUJEITAS A ANÁLISE POR NOSSOS MONITORES</h1>
+        <div>
+            <label class="label" for="nome">Nome</label>
+            <input class="input" type="text" name="nome" id="nome">
+        </div>
+        <div>
+            <label class="label" for="texto">texto</label>
+            <input class="input" type="text" name="texto" id="texto">
+        </div>
+
+         <div>
+            <label class="label" for="data">Data</label>
+            <input class="input" type="text" name="data" id="data">
+        </div>
+        <div>
+            <label class="label" for="img">Link da imagem</label>
+            <input class="input" type="text" name="img" id="img">
+        </div>
+        
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+</section>
+
+{% endblock %}

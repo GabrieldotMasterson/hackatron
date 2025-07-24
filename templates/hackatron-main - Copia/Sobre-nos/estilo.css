@@ -1,0 +1,141 @@
+/* style.css 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;  
+}
+
+
+ESSE CSS É PARA O VÍDEO DE FUNDO E O CONTEÚDO POR CIMA - Todo esse código é para o vídeo de fundo e o conteúdo que vai por cima dele.
+
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;  Joga o vídeo para trás do conteúdo 
+}
+
+
+.conteudo {
+  position: relative;
+  z-index: 1; Certifica que vai por cima do vídeo 
+  color: white;  Ou outro tom visível sobre o vídeo 
+  text-align: center;
+  padding-top: 20vh;
+}
+
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(3px);
+}
+*/
+
+
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #100d2e;
+  color: white;
+}
+
+/* HERO COM VÍDEO */
+.hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 10px black;
+  color: #ffffff;
+}
+
+/* CONTEÚDO */
+.content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  font-size: 20px;
+}
+
+.foto-perfil {
+  width: 150px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 20px;
+}
+
+
+
+/* FOOTER */
+footer {
+  background-color: #0c0a1f;
+  padding: 30px 20px;
+ 
+}
+
+footer a {
+  color: #72c6ff;
+  text-decoration: none;
+}
+
+footer p {
+  margin-left: 100px;
+
+}
+
+footer h3 {
+
+  text-align: center;
+  font-size: 35px;
+}
+
+
+footer a:hover {
+  text-decoration: underline;
+}

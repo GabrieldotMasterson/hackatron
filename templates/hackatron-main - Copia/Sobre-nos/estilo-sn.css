@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #d1e2eb;
+  color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+/* HERO COM VÍDEO */
+.hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #d0d4dd, #d8e6ec;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+ 
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 10px black;
+  color: #ffffff;
+}
+
+/* CONTEÚDO */
+.content {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  font-size: 20px;
+}
+
+
+
+.foto-perfil {
+  width: 150px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+  background-color: #06203a;
+  padding: 30px 20px;
+ 
+}
+
+footer a {
+  color: #cadfec;
+  text-decoration: none;
+
+  
+}
+
+ footer h3 {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  color: #dff5ff;
+
+ }
+
+
+footer h5 {
+
+  text-align: center;
+  font-size: 20px;
+  color:azure; 
+}
+
+footer p {
+
+  align-items: center;
+}
+
+
+footer h2 {
+   text-align: center;
+   font-size: 20px;
+
+}
+
+footer h1{
+
+  text-align: center;
+  font-size: 20px;
+  color: #dff5ff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

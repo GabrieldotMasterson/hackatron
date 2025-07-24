@@ -8,26 +8,25 @@
         <div class="box hero">
             <h1 class="title">Construindo Esperança, Realizando Sonhos</h1>
             <p class="text">Criando iniciativas que transformam comunidades e promovem igualdade para todos.</p>
-            <button class="button is-primary">EXPLORE O NOSSO MUSEU</button>
+            <a href="{{ url_for('museu') }}"><button class="button is-primary">EXPLORE O NOSSO MUSEU</button></a>
         </div>
 </section>
 
+<section class="section">
 {% for oportunidade in oportunidades %}
 
+
 <a class="box card" href="{{ url_for('detalhes', id=oportunidade.id) }}">
-
     
-    <img class="img" src="{{ oportunidade.img }}" alt="">
-    
+    <img class="img-oportunidade" src="{{ oportunidade.img }}" alt="">
     <div>
-        <h1 class="tilte">{{ oportunidade.title }}</h1>
-        <p class="subtitle">{{ oportunidade.subtitle }}</p>
+        <h1 class="title">{{ oportunidade.titulo }}</h1>
+        <p class="subtitle">{{ oportunidade.subtitulo }}</p>
     </div>
-     
-
 
 </a>
 
 {% endfor %}
+</section>
 
 {% endblock %}

@@ -3,22 +3,19 @@
 {% block title %}Conecta.Elas{% endblock %}
 
 {% block content %}
-<div class="box">
+<div class="section detalhes-container">
+    <div class="box detalhes-box">
+            <img class="detalhes-img" src="{{ detalhe.img }}" alt="">
 
-    <div>
-        <h1 class="tilte">{{ oportunidade.title }}</h1>
-        <p class="subtitle">{{ oportunidade.subtitle }}</p>
+        <div>
+            <h1 class="title">{{ detalhe.titulo }}</h1>
+            <p class="subtitle">{{ detalhe.subtitulo }}</p>
+            <p>{{ detalhe.detalhes }}</p>
+            <a class="botao-detalhe" href="{{ detalhe.link }}"><button class=" button is-primary botao-detalhe">link pra oportunidade</button></a>
+        </div>
+
+        
+
     </div>
-
-    <div>
-        <img class="image is-128x128" src="{{ oportunidade.img }}" alt="">
-    </div>
-
-    <div>
-        <p>{{ oportunidade.detalhes }}</p>
-    </div>
-
-
 </div>
-
 {% endblock %}
