@@ -34,23 +34,43 @@ a {
   display: flex; 
   flex-direction: row;
   width: 100%;
-  padding: 10px;
+  padding: 2rem;
   background-color: #f9f9f9;
 }
 
 .img-oportunidade{
   height: 20rem;
-  margin-right: 2rem;
+  margin-right: 4rem;
   object-fit: contain;
   width: 20rem;
+}
+
+/* forms */
+.field{
+  padding-left: 10rem;
+  padding-right: 10rem;
+  
 }
 
 /* contato */
 .contato-box {
   display: flex; 
   flex-direction: column;
+  padding: 5rem;
   
 }
+
+.section-contato{
+  padding-left: 10rem;
+  padding-right: 10rem;
+  
+}
+
+.img-contato{
+  padding: 3rem;
+}
+
+/* museu */
 
 .mulher-img{
   height: 20rem;
@@ -181,7 +201,4 @@ button {
   left: 25vw;
 }
 
-@media (max-width: 600px) {
-  
-}
 

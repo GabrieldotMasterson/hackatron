@@ -7,7 +7,7 @@
 <section class="field ">
     <form class="box form" action="{{ url_for('add_oportunidade') }}" method="POST">
         <h1 class="title">Adicione uma nova oportunidade</h1>
-        <h1>ESSAS OPORTUNIDADES ESTARÃO SUJEITAS A ANÁLISE POR NOSSOS MONITORES</h1>
+        <h1 class="subtitle">ESSAS OPORTUNIDADES ESTARÃO SUJEITAS A ANÁLISE POR NOSSOS MONITORES</h1>
         <div>
             <label class="label" for="titulo">Titulo</label>
             <input class="input" type="text" name="titulo" id="titulo">
@@ -31,7 +31,7 @@
         </div>
         
         <div>
-            <button type="submit">Enviar</button>
+            <button class="button is-primary" type="submit">Enviar</button>
         </div>
     </form>
 
