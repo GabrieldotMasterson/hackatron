@@ -6,9 +6,9 @@
 
 <section class="section " >
         <div class="box hero">
-            <h1 class="title">Construindo Esperança, Realizando Sonhos</h1>
-            <p class="text">Criando iniciativas que transformam comunidades e promovem igualdade para todos.</p>
-            <a href="{{ url_for('museu') }}"><button class="button is-primary">EXPLORE O NOSSO MUSEU</button></a>
+            <h1 class="title">Voe alto para enxergar mais longe!</h1>
+            <p class="text">O Museu das Mulheres não é apenas um lugar de arte ou história. É um espaço de transformação, onde a luta, a criatividade e a força feminina ganham vida. Cada obra, cada história, é uma lembrança de como mulheres ao longo do tempo contribuíram para moldar o mundo em que vivemos. Ao visitar esse museu, você não está apenas observando o passado, mas também refletindo sobre o papel fundamental que todos desempenhamos na construção de um futuro mais igualitário e justo. Vamos juntos mudar o mundo, começando pelo entendimento e pela valorização de tudo o que as mulheres conquistaram. Sua visita é um passo importante nessa jornada. Vamos olhar para o futuro, entendendo o passado.</p>
+            <button class="button is-primary">Explore nosso museu.</button>
         </div>
 </section>
 
@@ -22,6 +22,8 @@
     <div>
         <h1 class="title">{{ oportunidade.titulo }}</h1>
         <p class="subtitle">{{ oportunidade.subtitulo }}</p>
+
+        <p class="text">{{ oportunidade.detalhes }}</p>
     </div>
 
 </a>

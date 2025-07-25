@@ -6,20 +6,16 @@
 
   
   <video autoplay muted loop id="bg-video">
-    <source src="{{ url_for('static', filename='assets/videos/Conecta.elas.mp4') }}" type="video/mp4">       
+    <source src="{{ url_for('static', filename='assets/videos/Conectaelas.mp4') }}" type="video/mp4">       
     Seu navegador não suporta vídeos HTML5.
   </video>
 
-
-  <div class="conteudo">
-    
-  <nav>
-    <a href="">
-    <button>Visite o site clicando aqui</button>
-    </a>
+  <nav class="landingpage-entrar">
+      <a href="{{ url_for('index') }}">
+      <button>Visite o site clicando aqui</button>
+      </a>
   </nav>
-
-  </div>
+ 
 
 {% endblock %}
 
